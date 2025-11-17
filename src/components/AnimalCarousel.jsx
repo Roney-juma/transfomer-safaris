@@ -1,47 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import lionImage from '../images/lion.jpg';
+import elephantImage from '../images/elephant.jpg';
+import giraffeImage from '../images/giraffe.avif';
 
 const AnimalCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Animal images data - using high-quality placeholder images
+  // Animal images data - using local images
   const animalImages = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?w=800&h=600&fit=crop&crop=center',
+      url: lionImage,
       title: 'Majestic Lion',
       description: 'The king of the jungle in his natural habitat'
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&h=600&fit=crop&crop=center',
+      url: elephantImage,
       title: 'African Elephant',
       description: 'Gentle giants roaming the savanna'
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1549366021-9f761d040a94?w=800&h=600&fit=crop&crop=center',
-      title: 'Graceful Cheetah',
-      description: 'The fastest land animal in action'
-    },
-    {
-      id: 4,
-      url: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=600&fit=crop&crop=center',
+      url: giraffeImage,
       title: 'African Giraffe',
       description: 'Towering beauties of the African plains'
-    },
-    {
-      id: 5,
-      url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop&crop=center',
-      title: 'Rhinoceros',
-      description: 'Powerful and endangered giants'
-    },
-    {
-      id: 6,
-      url: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&h=600&fit=crop&crop=center',
-      title: 'African Leopard',
-      description: 'Elusive spotted hunters of the night'
     }
   ];
 
