@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Star, Users, Award } from 'lucide-react';
+import lionLogo from '../images/liontrack logo.jpeg';
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
                 of Africa
               </h1>
               <p className="text-xl text-gray-700 mt-6 leading-relaxed">
-                Embark on extraordinary safari adventures with Transformer Safaris. 
+                Embark on extraordinary safari adventures with LionTrack Safaris. 
                 Experience authentic African wildlife, breathtaking landscapes, and 
                 unforgettable moments that will transform your perspective on nature.
               </p>
@@ -77,9 +78,9 @@ const Hero = () => {
               {/* Logo watermark */}
               <div className="absolute top-8 right-8 w-16 h-16 opacity-20">
                 <img 
-                  src="/logo.jpg" 
-                  alt="Transformer Safaris" 
-                  className="w-full h-full object-contain rounded-full"
+                  src={lionLogo} 
+                  alt="LionTrack Safaris" 
+                  className="w-full h-full object-contain"
                 />
               </div>
               

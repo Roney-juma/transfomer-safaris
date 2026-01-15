@@ -40,11 +40,11 @@ const About = () => {
           {/* Left Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-safari-navy mb-6">
-              About Transformer Safaris
+              About LionTrack Safaris
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Founded with a passion for showcasing Africa's incredible wildlife and landscapes, 
-              Transformer Safaris has been creating unforgettable safari experiences for over 15 years. 
+              LionTrack Safaris has been creating unforgettable safari experiences for over 15 years. 
               We believe that every safari should be transformative – changing how you see the world 
               and your place within it.
             </p>

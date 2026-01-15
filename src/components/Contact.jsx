@@ -42,8 +42,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email Us</div>
-                  <div className="text-gray-300">info@transformersafaris.com</div>
-                  <div className="text-gray-300">bookings@transformersafaris.com</div>
+                  <div className="text-gray-300">info@liontracksafaris.com</div>
+                  <div className="text-gray-300">bookings@liontracksafaris.com</div>
                 </div>
               </div>
               

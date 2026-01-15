@@ -1,6 +1,6 @@
-# Transformer Safaris - React & Tailwind CSS Project
+# LionTrack Safaris - React & Tailwind CSS Project
 
-This is a modern tours and travel website for Transformer Safaris built with React and Tailwind CSS.
+This is a modern tours and travel website for LionTrack Safaris built with React and Tailwind CSS.
 
 ## Project Structure
 - React with Vite for fast development

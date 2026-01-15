@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 bg-safari-orange rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">TS</span>
+                <span className="text-white font-bold text-xl">LT</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Transformer Safaris</h3>
+                <h3 className="text-2xl font-bold">LionTrack Safaris</h3>
                 <p className="text-sm text-gray-400">Authenticity • Adventure • Excellence</p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-safari-orange" />
                 <div>
                   <div className="font-medium">Email</div>
-                  <div className="text-gray-400">info@transformersafaris.com</div>
+                  <div className="text-gray-400">info@liontracksafaris.com</div>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 mb-4 md:mb-0">
-              © 2024 Transformer Safaris. All rights reserved.
+              © 2024 LionTrack Safaris. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-safari-orange transition-colors">Privacy Policy</a>
