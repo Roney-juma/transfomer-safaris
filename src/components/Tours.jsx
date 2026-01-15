@@ -1,5 +1,6 @@
 import React from 'react';
 import { Clock, Users, Star, ArrowRight } from 'lucide-react';
+import giraffeLocal from '../images/giraffe.avif';
 
 const Tours = () => {
   const tours = [
@@ -32,7 +33,7 @@ const Tours = () => {
       groupSize: "2-6 People",
       rating: 5.0,
       price: "From $2,800",
-      image: "https://images.unsplash.com/photo-1549366021-9f761d040a94?w=400&h=300&fit=crop&crop=center",
+  image: giraffeLocal,
       highlights: ["Great Migration", "Endless Plains", "Luxury Tented Camp", "Professional Photography Guide"],
       description: "Follow the Great Migration in the iconic Serengeti, one of nature's most spectacular events."
     },
