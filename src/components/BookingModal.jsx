@@ -10,7 +10,7 @@ const initialState = {
   message: ''
 };
 
-const BookingModal = ({ open, onClose }) => {
+const BookingModal = ({ open, onClose, initialValues = null }) => {
   const [form, setForm] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [submitting, setSubmitting] = useState(false);
@@ -22,6 +22,12 @@ const BookingModal = ({ open, onClose }) => {
       setTimeout(() => dialogRef.current?.focus(), 50);
       setSuccess(false);
       setSubmitting(false);
+      // merge initial values with defaults so missing fields are filled
+      if (initialValues) {
+        setForm((f) => ({ ...initialState, ...initialValues }));
+      } else {
+        setForm(initialState);
+      }
     } else {
       setForm(initialState);
       setErrors({});

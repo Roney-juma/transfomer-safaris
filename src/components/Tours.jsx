@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Clock, Users, Star, ArrowRight } from 'lucide-react';
 import giraffeLocal from '../images/giraffe.avif';
+import BookingModal from './BookingModal';
 
 const Tours = () => {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [bookingInitial, setBookingInitial] = useState(null);
   const tours = [
     {
       id: 1,
@@ -52,6 +55,7 @@ const Tours = () => {
 
   return (
     <section id="tours" className="py-20 bg-white">
+      <BookingModal open={isBookingOpen} onClose={() => setIsBookingOpen(false)} initialValues={bookingInitial} />
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -121,7 +125,10 @@ const Tours = () => {
                     <div className="text-2xl font-bold text-safari-navy">{tour.price}</div>
                     <div className="text-sm text-gray-600">per person</div>
                   </div>
-                  <button className="bg-safari-orange text-white px-6 py-3 rounded-full hover:bg-safari-yellow transition-colors font-medium flex items-center space-x-2 group-hover:scale-105 transition-transform">
+                  <button onClick={() => {
+                      setBookingInitial({ safari: tour.title });
+                      setIsBookingOpen(true);
+                    }} className="bg-safari-orange text-white px-6 py-3 rounded-full hover:bg-safari-yellow transition-colors font-medium flex items-center space-x-2 group-hover:scale-105 transition-transform">
                     <span>Book Now</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
