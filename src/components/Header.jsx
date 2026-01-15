@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import Logo from './Logo';
+import BookingModal from './BookingModal';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
+    <>
     <header className="bg-white shadow-lg relative">
       {/* Top contact bar */}
       <div className="bg-safari-navy text-white py-2">
@@ -43,7 +46,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-safari-orange text-white px-6 py-2 rounded-full hover:bg-safari-yellow transition-colors font-medium">
+            <button onClick={() => setIsBookingOpen(true)} className="bg-safari-orange text-white px-6 py-2 rounded-full hover:bg-safari-yellow transition-colors font-medium">
               Book Safari
             </button>
           </div>
@@ -66,7 +69,7 @@ const Header = () => {
               <a href="#about" className="text-safari-navy hover:text-safari-orange transition-colors font-medium">About Us</a>
               <a href="#gallery" className="text-safari-navy hover:text-safari-orange transition-colors font-medium">Gallery</a>
               <a href="#contact" className="text-safari-navy hover:text-safari-orange transition-colors font-medium">Contact</a>
-              <button className="bg-safari-orange text-white px-6 py-2 rounded-full hover:bg-safari-yellow transition-colors font-medium w-fit">
+              <button onClick={() => setIsBookingOpen(true)} className="bg-safari-orange text-white px-6 py-2 rounded-full hover:bg-safari-yellow transition-colors font-medium w-fit">
                 Book Safari
               </button>
             </nav>
@@ -74,6 +77,8 @@ const Header = () => {
         )}
       </div>
     </header>
+    <BookingModal open={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+    </>
   );
 };
 
